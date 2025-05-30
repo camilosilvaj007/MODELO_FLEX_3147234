@@ -1,0 +1,42 @@
+*{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+}
+.flex-container{
+       border: black solid 0px;
+       display: flex;
+       flex-flow: row nowrap;
+       justify-content: flex-start;
+       align-items: stretch;
+       width: 600px;
+       height: 400px;
+}
+.flex-item{
+       /*height: 100px;*/
+       width: 100px;
+}
+.fl1{
+       background-color: plum;
+       flex-grow: 0.5;
+       /*flex-grow: admite 
+       -numeros enteros
+       -numeros decimales 
+       no adminte negativos */
+}
+.fl2{
+       background-color: lightblue;
+       flex-grow: 1;
+}
+.fl3{
+       background-color: lime;
+       flex-grow: 2;
+}
+.fl4{
+       background-color: lightcoral;
+       flex-grow: 0.3;
+}
+.fl5{
+       background-color: lightskyblue;
+       flex-grow: 1;
+}
