@@ -1,0 +1,65 @@
+*{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+}
+
+body{
+       font-family: sans-serif;
+       background-color:#f34f53;
+       font-size: 16px;
+       padding: 1rem;
+}
+
+.table-container{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       max-width: 900px;
+       border: 1px solid #000;
+       border-radius: 5px;
+}
+
+.table-header , .row{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+}
+
+.table-header{
+       background: skyblue;
+       color: white;
+       font-weight: bold;
+       padding: 0.75rem 1rem;
+}
+
+.cell{
+       flex: 1 1 auto;
+       padding: 0.5rem;
+       overflow: hidden;
+}
+
+.cell:nth-child(1){
+       flex-basis: 150px;/*no queremos que el nombre se
+        reduzca al ancho del dispósitivo*/
+        flex-shrink: 0;
+}
+
+.cell:nth-child(2){
+       flex-basis: 200px;/*no queremos que el nombre se
+        reduzca al ancho del dispósitivo*/
+        flex-shrink: 0;
+}
+.cell:nth-child(3){
+       flex-basis: 100%;
+}
+
+.table-body{
+       overflow-y: auto;
+}
+
+.row{
+       background-color: white;
+       padding: 0.75rem 1rem;
+       border:1px dashed #000 ;
+}
